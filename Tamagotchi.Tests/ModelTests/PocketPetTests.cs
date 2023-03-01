@@ -13,11 +13,21 @@ namespace Tamagotchi.Tests
     // NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
     {
       // Arrange
-      PocketPet newPet = new PocketPet();
+      PocketPet newPet = new PocketPet("Simon");
       // Act
       //not needed here
       // Assert
     Assert.AreEqual(typeof(PocketPet), newPet.GetType());
+    }
+
+  [TestMethod]
+    public void PocketPetConstructor_HasNameAttribute_String()
+    {
+      //arrange
+      PocketPet newPet = new PocketPet("Simon");
+      //act
+      //assert
+      Assert.AreEqual("Simon", newPet.Name);
     }
   }
 }

@@ -3,9 +3,16 @@ using System;
 
 namespace Tamagotchi.Models
 {
-  public class ClassName
+  public class PocketPet
   {
-    
+    public string Name { get; set; }
+
+    public PocketPet(string name)
+    {
+      Name = name;
+    }
   }
+
+
 
 }
