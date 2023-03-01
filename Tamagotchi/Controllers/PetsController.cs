@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Tamagotchi.Models;
+using System.Collections.Generic;
 
 namespace Tamagotchi.Controllers
 {
@@ -19,5 +20,13 @@ namespace Tamagotchi.Controllers
         return View(newPet);
       }
 
+      [HttpGet("/pets/index")]
+      public ActionResult Index()
+      {
+        List<PocketPet> allPets = PocketPet.GetAll();
+        return View(allPets);
+      }
+
+      
     }
 }
