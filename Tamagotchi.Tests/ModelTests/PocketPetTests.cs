@@ -77,7 +77,7 @@ namespace Tamagotchi.Tests
       Assert.AreEqual(14, newPet.Happiness);
     }
     [TestMethod]
-    public void Rumpus_Adds4Fatigue_Int()
+    public void Sleep_Adds4Fatigue_Int()
     {
       //arrange
       PocketPet newPet = new PocketPet("Simon");
@@ -85,6 +85,18 @@ namespace Tamagotchi.Tests
       newPet.Sleep();
       //assert
       Assert.AreEqual(14, newPet.Fatigue);
+    }
+    [TestMethod]
+    public void Time_Subtracts1Hunger1Happiness1Fatigue_Int()
+    {
+      //arrange
+      PocketPet newPet = new PocketPet("Simon");
+      //act
+      newPet.Time();
+      //assert
+      Assert.AreEqual(9, newPet.Hunger);
+      Assert.AreEqual(9, newPet.Happiness);
+      Assert.AreEqual(9, newPet.Fatigue);
     }
   }
 }
