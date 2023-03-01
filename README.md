@@ -30,7 +30,7 @@ Create buttons to call methods to:
 ## Setup/Installation Requirements
 
 * _Clone this repo._
-* _Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "ProjectName"._
+* _Open your terminal (e.g., Terminal or GitBash) and navigate to this project's production directory called "Tamagotchi.Solution"._
 * _In the command line, run the command ``dotnet run`` to compile and execute the console application. Since this is a console application, you'll interact with it through text commands in your terminal._
 * _Optionally, you can run ``dotnet build`` to compile this console app without running it._
 * _If we want to run our project in production mode with a watcher, we can use a command line flag to specify that we want to run the "production" profile. ``dotnet watch run --launch-profile "production"``_
@@ -38,8 +38,8 @@ Create buttons to call methods to:
 
 ## Test Instructions
 
-* _Using a shell program, navigate from the root directory, "ClassName.Solution," to the "ClassName.Tests" directory._
-* _Once in the "ClassName.Tests" directory, type ``dotnet restore`` into the console._
+* _Using a shell program, navigate from the root directory, "Tamagotchi.Solution," to the "PocketPet.Tests" directory._
+* _Once in the "PocketPet.Tests" directory, type ``dotnet restore`` into the console._
 * _After the restore process is complete, type ``dotnet test`` into the console. This will run all written tests and display the test results into the console to review._
 
 ## Known Bugs
