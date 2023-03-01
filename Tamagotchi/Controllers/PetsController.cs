@@ -13,11 +13,11 @@ namespace Tamagotchi.Controllers
         return View();
       }
 
-      [HttpPost("/pets")]
-      public ActionResult Pets(string name)
+      [HttpGet("/pets/{id}")]
+      public ActionResult Play(int id)
       {
-        PocketPet newPet = new PocketPet(name);
-        return View(newPet);
+        PocketPet foundPet = PocketPet.Find(id);
+        return View(foundPet);
       }
 
       [HttpGet("/pets/index")]
@@ -26,7 +26,11 @@ namespace Tamagotchi.Controllers
         List<PocketPet> allPets = PocketPet.GetAll();
         return View(allPets);
       }
-
-      
+      [HttpPost("/pets/play")]
+      public ActionResult Play(string name)
+      {
+        PocketPet newPet = new PocketPet(name);
+        return View(newPet);
+      }
     }
 }
