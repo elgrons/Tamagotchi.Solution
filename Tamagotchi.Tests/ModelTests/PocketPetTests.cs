@@ -98,5 +98,17 @@ namespace Tamagotchi.Tests
       Assert.AreEqual(9, newPet.Happiness);
       Assert.AreEqual(9, newPet.Fatigue);
     }
+    [TestMethod]
+    public void FoodFight_Adds3Hunger3HappinessSubtracts3Fatigue_Int()
+    {
+      //arrange
+      PocketPet newPet = new PocketPet("Simon");
+      //act
+      newPet.FoodFight();
+      //assert
+      Assert.AreEqual(13, newPet.Hunger);
+      Assert.AreEqual(13, newPet.Happiness);
+      Assert.AreEqual(7, newPet.Fatigue);
+    }
   }
 }
