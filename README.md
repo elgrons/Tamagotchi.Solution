@@ -1,19 +1,31 @@
-# _{Application Name}_
+# _Tamagotchi_
 
-#### By Eliot Gronstal
+#### By Eliot Gronstal, E Luckie, Jannon Sielaff
 
-#### _{Brief description of application}_
+#### _A web app where you can create a Tamagotchi object by giving it a name and submitting a form. Made for Week 2 C# Practice at Epicodus Coding School._
 
 ## Technologies Used
 
 * _C#_
 * _.NET_
-* _you used in your project_
-* _here_
+* _HTML_
+* _MSTest_
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+_Make a web app where a user can create a Tamagotchi object by giving it a name and submitting a form._
+
+* _It has properties for the amount of food, attention, and rest it currently has._
+
+* _There is a main page displaying the names of all the Tamagotchi objects with the values of their properties._
+
+Create buttons to call methods to:
+
+* _Feed it, play with it, and put it to sleep. These methods should modify the properties of a single Tamagotchi object — such as a food property._
+
+* _Make time pass. Every time you press it, the food, happiness and sleep properties of all Tamagotchis should decrease. If any of these properties get to 0, the Tamagotchi object should report that it's dead._
+
+* _At the very least, this app will include RESTful Index, New, Create, and Show routes._
 
 ## Setup/Installation Requirements
 
@@ -34,10 +46,10 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 * _Any known issues_
 
-* _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com)_
+* _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com) [eluckie.d@gmail.com](eluckie.d@gmail.com), or [jannon.sielaff@gmail.com](jannon.sielaff@gmail.com)_
 
 ## License
 
 _[MIT](https://opensource.org/license/mit/)_
 
-Copyright (c) _2023_ _Eliot Gronstal_
+Copyright (c) _2023_ _Eliot Gronstal, E Luckie, Jannon Sielaff_

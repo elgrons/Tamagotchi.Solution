@@ -3,10 +3,10 @@ using ProjectName.Models;
 using System.Collections.Generic; 
 using System;
 
-namespace ProjectName.Tests
+namespace Tamagotchi.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class PocketPet
   {
   [TestMethod]
     public void ClassNameConstructor_CreatesInstanceOfClassName_ClassName()
