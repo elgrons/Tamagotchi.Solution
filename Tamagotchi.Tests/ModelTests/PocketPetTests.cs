@@ -126,5 +126,20 @@ namespace Tamagotchi.Tests
       //Assert
       CollectionAssert.AreEqual(newPetList, result);
     }
+
+    [TestMethod]
+
+    public void Find_ReturnsCorrectPocketPet_PocketPet()
+    {
+      //Arrange
+      string name1 = "Simon";
+      string name2 = "Archipelago";
+      PocketPet newPet1 = new PocketPet(name1);
+      PocketPet newPet2 = new PocketPet(name2);
+      //Act
+      PocketPet result = PocketPet.Find(2);
+      //Assert
+      Assert.AreEqual(newPet2, result);
+    }
   }
 }
