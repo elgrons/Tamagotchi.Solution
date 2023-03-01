@@ -32,5 +32,12 @@ namespace Tamagotchi.Controllers
         PocketPet newPet = new PocketPet(name);
         return View(newPet);
       }
+
+      [HttpPost("/pets/delete")]
+      public ActionResult DeleteAll()
+      {
+        PocketPet.ClearAll();
+        return View();
+      }
     }
 }

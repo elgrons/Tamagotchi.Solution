@@ -10,11 +10,17 @@
       crossorigin="anonymous">
   </head>
   <body>
-  
+  @using Tamagotchi.Models;
     <h1>@Model.Name</h1>
     <h3>Hunger: @Model.Hunger</h3>
     <h3>Happiness: @Model.Happiness</h3>
     <h3>Fatigue: @Model.Fatigue</h3>
+    <br>
+    we need a button named feed and in this button, we will use Feed(Model)
+    method="post"
+    <form action="/pets/delete" method="post">
+      <button type="submit" name="button">Clear All Pets</button>
+    </form>
     <br>
     <a href='/pets/index'>See list of pets</a>
   </body>
