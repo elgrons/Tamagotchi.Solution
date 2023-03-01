@@ -6,8 +6,13 @@ using System;
 namespace Tamagotchi.Tests
 {
   [TestClass]
-  public class PocketPetTests
+  public class PocketPetTests : IDisposable
   {
+    public void Dispose()
+    {
+      PocketPet.ClearAll();
+    }
+
     [TestMethod]
     public void PocketPetConstructor_CreatesInstanceOfPocketPet_PocketPet()
     // NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
@@ -109,6 +114,17 @@ namespace Tamagotchi.Tests
       Assert.AreEqual(13, newPet.Hunger);
       Assert.AreEqual(13, newPet.Happiness);
       Assert.AreEqual(7, newPet.Fatigue);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_PocketPetList()
+    {
+      //Arrange
+      List<PocketPet> newPetList = new List<PocketPet> { };
+      //Act
+      List<PocketPet> result = PocketPet.GetAll();
+      //Assert
+      CollectionAssert.AreEqual(newPetList, result);
     }
   }
 }
