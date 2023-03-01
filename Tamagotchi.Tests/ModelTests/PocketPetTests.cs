@@ -8,7 +8,7 @@ namespace Tamagotchi.Tests
   [TestClass]
   public class PocketPetTests
   {
-  [TestMethod]
+    [TestMethod]
     public void PocketPetConstructor_CreatesInstanceOfPocketPet_PocketPet()
     // NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
     {
@@ -20,7 +20,7 @@ namespace Tamagotchi.Tests
     Assert.AreEqual(typeof(PocketPet), newPet.GetType());
     }
 
-  [TestMethod]
+    [TestMethod]
     public void PocketPetConstructor_HasNameAttribute_String()
     {
       //arrange
@@ -29,7 +29,7 @@ namespace Tamagotchi.Tests
       //assert
       Assert.AreEqual("Simon", newPet.Name);
     }
-  [TestMethod]
+    [TestMethod]
     public void PocketPetConstructor_Has10HungerAtBirth_Int()
     {
       //arrange
@@ -38,7 +38,7 @@ namespace Tamagotchi.Tests
       //assert
       Assert.AreEqual(10, newPet.Hunger);
     }
-      [TestMethod]
+    [TestMethod]
     public void PocketPetConstructor_Has10HappinessAtBirth_Int()
     {
       //arrange
@@ -46,6 +46,15 @@ namespace Tamagotchi.Tests
       //act
       //assert
       Assert.AreEqual(10, newPet.Happiness);
+    }
+    [TestMethod]
+    public void PocketPetConstructor_Has10FatigueAtBirth_Int()
+    {
+      //arrange
+      PocketPet newPet = new PocketPet("Simon");
+      //act
+      //assert
+      Assert.AreEqual(10, newPet.Fatigue);
     }
   }
 }
