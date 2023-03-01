@@ -38,5 +38,14 @@ namespace Tamagotchi.Tests
       //assert
       Assert.AreEqual(10, newPet.Hunger);
     }
+      [TestMethod]
+    public void PocketPetConstructor_Has10HappinessAtBirth_Int()
+    {
+      //arrange
+      PocketPet newPet = new PocketPet("Simon");
+      //act
+      //assert
+      Assert.AreEqual(10, newPet.Happiness);
+    }
   }
 }
