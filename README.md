@@ -46,7 +46,7 @@ Create buttons to call methods to:
 
 * _Any known issues_
 
-* _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com) [eluckie.d@gmail.com](eluckie.d@gmail.com), or [jannon.sielaff@gmail.com](jannon.sielaff@gmail.com)_
+* _Please reach out with any questions or concerns to [eliot.lauren@gmail.com](eliot.lauren@gmail.com), [eluckie.d@gmail.com](eluckie.d@gmail.com), or [jannon.sielaff@gmail.com](jannon.sielaff@gmail.com)_
 
 ## License
 
