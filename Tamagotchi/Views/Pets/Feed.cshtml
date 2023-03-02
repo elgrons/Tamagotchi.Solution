@@ -12,16 +12,9 @@
   <body>
     <h1>@Model.Name</h1>
     <h3>Hunger: @Model.Hunger</h3>
-    <h3>Happiness: @Model.Happiness</h3>
-    <h3>Fatigue: @Model.Fatigue</h3>
-    <br>
-
     <form action="/pets/feed" method="post">
       <input name="id" type="hidden" value="@Model.Id">
       <button type="submit" name="button">Give @Model.Name a snack!</button>
-    </form>
-    <form action="/pets/delete" method="post">
-      <button type="submit" name="button">Clear All Pets</button>
     </form>
     <br>
     <a href='/pets/index'>See list of pets</a>

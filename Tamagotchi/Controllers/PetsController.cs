@@ -39,5 +39,12 @@ namespace Tamagotchi.Controllers
         PocketPet.ClearAll();
         return View();
       }
+      [HttpPost("/pets/feed")]
+      public ActionResult Feed(int id)
+      {
+        PocketPet foundPet = PocketPet.Find(id);
+        foundPet.Feed();
+        return View(foundPet);
+      }
     }
 }
