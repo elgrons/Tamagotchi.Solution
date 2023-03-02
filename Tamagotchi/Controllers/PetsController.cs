@@ -46,5 +46,40 @@ namespace Tamagotchi.Controllers
         foundPet.Feed();
         return View(foundPet);
       }
+      [HttpPost("/pets/joy")]
+      public ActionResult Joy(int id)
+      {
+        PocketPet foundPet = PocketPet.Find(id);
+        foundPet.Rumpus();
+        return View(foundPet);
+      }
+      [HttpPost("/pets/slumber")]
+      public ActionResult Slumber(int id)
+      {
+        PocketPet foundPet = PocketPet.Find(id);
+        foundPet.Sleep();
+        return View(foundPet);
+      }
+      [HttpPost("/pets/foodfight")]
+      public ActionResult FoodFight(int id)
+      {
+        PocketPet foundPet = PocketPet.Find(id);
+        foundPet.FoodFight();
+        return View(foundPet);
+      }
+      [HttpPost("/pets/time")]
+      public ActionResult Time(int id)
+      {
+        PocketPet foundPet = PocketPet.Find(id);
+        foundPet.Time();
+        return View(foundPet);
+      }
+      [HttpPost("/pets/dead")]
+      public ActionResult Dead(int id)
+      {
+        PocketPet foundPet = PocketPet.Find(id);
+        PocketPet.Delete(id);
+        return View(foundPet);
+      }
     }
 }

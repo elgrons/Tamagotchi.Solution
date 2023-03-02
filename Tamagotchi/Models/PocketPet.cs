@@ -63,5 +63,12 @@ namespace Tamagotchi.Models
     {
       return _petparty[searchId-1];
     }
+
+    public static PocketPet Delete(int searchId)
+    {
+      PocketPet pet = PocketPet.Find(searchId);
+      _petparty.Remove(pet);
+      return pet;
+    }
   }
 }
