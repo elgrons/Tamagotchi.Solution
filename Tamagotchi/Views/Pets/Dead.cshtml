@@ -10,5 +10,15 @@
       crossorigin="anonymous">
   </head>
   <body>
+    <h1>YOU KILLED @Model.Name</h1>
+    <br>
+    <br>
+    <a href='/pets/index'>See list of pets</a>
+    <br>
+    <a href="/pets/new">Add a new pet</a>
+    <br><br>
+    <form action="/pets/delete" method="post">
+      <button type="submit" name="button">Clear All Pets</button>
+    </form>
   </body>
 </html>
