@@ -62,7 +62,24 @@ namespace Tamagotchi.Tests
       CollectionAssert.AreEqual(testList, result);
     }
 
-    
+    [TestMethod]
+    public void GetAll_ReturnPocketPets_PocketPetList()
+  {
+    //Arrange
+    string name01 = "Simon";
+    string name02 = "Anastasia";
+    PocketPet newPocketPet1 = new PocketPet(2, name01);
+    newPocketPet1.Save();
+    PocketPet newPocketPet2 = new PocketPet(1, name02);
+    newPocketPet2.Save();
+    List<PocketPet> newPocketPetList = new List<PocketPet>{ newPocketPet1, newPocketPet2};
+
+    //Act 
+    List<PocketPet> result = PocketPet.GetAll();
+
+    //Assert
+    CollectionAssert.AreEqual(newPocketPetList, result);
+    }    
   }
 }
 

@@ -29,7 +29,7 @@ namespace Tamagotchi.Controllers
       [HttpPost("/pets/play")]
       public ActionResult Play(string name)
       {
-        PocketPet newPet = new PocketPet(name);
+        PocketPet newPet = new PocketPet(1, name);
         return View(newPet);
       }
 
