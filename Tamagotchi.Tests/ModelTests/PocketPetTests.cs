@@ -34,6 +34,35 @@ namespace Tamagotchi.Tests
       //Assert
       CollectionAssert.AreEqual(newPetList, result);
     }
+
+    [TestMethod]
+    public void ReferenceTypes_ReturnsTrueBecauseBothPocketPetsAreSameReference_Bool()
+    {
+      PocketPet firstPet = new PocketPet(1, "Anastasia");
+      PocketPet copyOfFirstPet = firstPet;
+      copyOfFirstPet.Name = "Puddle";
+      Assert.AreEqual(firstPet.Name, copyOfFirstPet.Name);
+    }
+
+    [TestMethod]
+    public void ValueTypes_ReturnsTrueBecauseValuesAreTheSame_Bool()
+    {
+      int test1 = 1;
+      int test2 = 1;
+      Assert.AreEqual(test1, test2);
+    }
+
+    [TestMethod]
+    public void Save_SavesToDatabase_PocketPetList()
+    {
+      PocketPet testPocketPet = new PocketPet(1, "Simon");
+      testPocketPet.Save();
+      List<PocketPet> result = PocketPet.GetAll();
+      List<PocketPet>testList = new List<PocketPet>{testPocketPet};
+      CollectionAssert.AreEqual(testList, result);
+    }
+
+    
   }
 }
 
