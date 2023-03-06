@@ -1,15 +1,15 @@
-using Microsoft.AspNetCore.Mvc;
+// using Microsoft.AspNetCore.Mvc;
 
-namespace Tamagotchi.Controllers
-{
-    public class HomeController : Controller
-    {
+// namespace Tamagotchi.Controllers
+// {
+//     public class HomeController : Controller
+//     {
 
-      [HttpGet("/")]
-      public ActionResult Index()
-      {
-        return View();
-      }
+//       [HttpGet("/")]
+//       public ActionResult Index()
+//       {
+//         return View();
+//       }
 
-    }
-}
+//     }
+// }
